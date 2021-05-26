@@ -1,24 +1,65 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import Home from './home';
+import Login from './login';
+import { Switch, BrowserRouter as Router,  Route } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      
+    <Router>
+      <Switch>
+      <Route path="/" exact>
+          <Login />
+        </Route>
+        <Route path="/login2">
+          <Login2 />
+        </Route>
+        <Route path="/customer">
+          <Customer />
+        </Route>
+        <Route path="/levelOfSugar">
+          <LevelOfSugar />
+        </Route>
+        <Route path="/home">
+          <Home />
+        </Route>
+        <Route path="/loginManager">
+          <LoginManager />
+        </Route>
+        <Route path="/loginUser">
+          <LoginUser />
+        </Route>
+        <Route path="/manager">
+          <Manager />
+        </Route>
+        <Route path="/meal">
+          <Meal/>
+        </Route>
+        <Route path="/orderConfirmation">
+          <OrderConfirmation/>
+        </Route>
+        <Route path="/productHome">
+          <ProductHome/>
+        </Route>
+        <Route path="/restaurant">
+          <Restaurant/>
+        </Route>
+        <Route path="/result">
+          <Result/>
+        </Route>
+        <Route path="/addMeal">
+          <AddMeal/>
+        </Route>
+
+
+      </Switch>
+    </Router>
+
+
+      <Login />
+     <Home />
     </div>
   );
 }
