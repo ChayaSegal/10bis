@@ -1,12 +1,26 @@
 import React from 'react';
 
-function AddMeal() {
+const AddMeal = () => {
+  const history = useHistory();
+  const handleClick1 = () =>{
+    history.push("/custemer")
+  } 
+  const handleClick2 = () =>{
+   history.push("/maneger")
+ }
+  
+  
+  
+  
+  
+  
   return (
       
     <div className="App">  
 
  
-
+    <Button  onClick={handleClick1}>התחברות</Button>
+    <Button  onClick={handleClick2}>הרשמה</Button>
     <div>קטגוריה</div>
 
     <button>מנות פתיחה</button>

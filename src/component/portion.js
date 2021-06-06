@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Portion() {
+const Portion = ()=> {
   return (
       
     <div className="App">  

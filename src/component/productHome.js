@@ -1,6 +1,6 @@
 import React from 'react';
 
-function PoductHome() {
+const PoductHome = () => {
   return (
       
     <div className="App">  

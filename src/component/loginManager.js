@@ -1,6 +1,6 @@
 import React from 'react';
 
-function LoginManager() {
+const LoginManager = () => {
   return (
       
     <div className="App">  

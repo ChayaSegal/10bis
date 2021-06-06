@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Customer() {
+const Customer = () => {
   return (
       
     <div className="App">  

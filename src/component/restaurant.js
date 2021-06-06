@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Restaurant() {
+const Restaurant = () => {
   return (
     <div className="App">  
 

@@ -13,9 +13,7 @@ function App() {
       <Route path="/" exact>
           <Login />
         </Route>
-        <Route path="/login2">
-          <Login2 />
-        </Route>
+       
         <Route path="/customer">
           <Customer />
         </Route>
@@ -34,6 +32,7 @@ function App() {
         <Route path="/manager">
           <Manager />
         </Route>
+      
         <Route path="/meal">
           <Meal/>
         </Route>

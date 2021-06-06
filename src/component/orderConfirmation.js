@@ -1,6 +1,6 @@
 import React from 'react';
 
-function OrderConfirmation() {
+const OrderConfirmation = () => {
   return (
     <div className="App">  
 

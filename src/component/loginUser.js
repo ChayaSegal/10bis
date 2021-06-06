@@ -1,6 +1,6 @@
 import React from 'react';
 
-function LoginUser() {
+const LoginUser = () => {
   return (
     <div className="App">  
   

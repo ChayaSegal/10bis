@@ -1,6 +1,6 @@
 import React from 'react';
 
-function LevelOfSugar() {
+const LevelOfSugar = () => {
   return (
       
     <div className="App">  
