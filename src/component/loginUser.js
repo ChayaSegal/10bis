@@ -6,6 +6,10 @@ const LoginUser = () => {
   const handleClick1 = () =>{
     history.push("/home")
   } 
+
+
+
+  
   return (
     <div className="App">  
   

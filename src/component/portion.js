@@ -5,8 +5,6 @@ const Portion = ()=> {
       
     <div className="App">  
 
-   
-
     <button>הוספת מנה</button>
 
     <button>עוף סיני</button>

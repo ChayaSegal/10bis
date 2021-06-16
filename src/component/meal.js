@@ -5,8 +5,6 @@ const Meal = () => {
       
     <div className="App">  
 
-   
-
     <div>שם מנה</div>
     <input></input>
     <div>תמונה</div>

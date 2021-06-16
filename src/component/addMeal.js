@@ -10,17 +10,10 @@ const AddMeal = () => {
    history.push("/maneger")
  }
   
-  
-  
-  
-  
-  
   return (
       
     <div className="App">  
-
- 
-    <Button  onClick={handleClick1}>התחברות</Button>
+   <Button  onClick={handleClick1}>התחברות</Button>
     <Button  onClick={handleClick2}>הרשמה</Button>
     <div>קטגוריה</div>
 

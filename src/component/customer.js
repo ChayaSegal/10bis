@@ -10,8 +10,6 @@ const Customer = () => {
       
     <div className="App">  
 
-
-
     <label>שם משתמש</label>
     <input></input>
     <label>סיסמא</label>
@@ -26,7 +24,9 @@ const Customer = () => {
     <input></input>
     <label>טלפון</label>
     <input></input>
+
     <Button  onClick={handleClick2}>לאישור הרשמה</Button>
+    
     </div>
   );
 }
