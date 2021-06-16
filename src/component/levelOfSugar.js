@@ -1,6 +1,11 @@
 import React from 'react';
-
+import { useHistory } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
 const LevelOfSugar = () => {
+  const history = useHistory();
+  const handleClick1 = () =>{
+    history.push("/result")
+  } 
   return (
       
     <div className="App">  
@@ -22,8 +27,8 @@ const LevelOfSugar = () => {
 
     <input></input>
 
-    <button>לחישוב כמות האינסולין</button>
-
+    
+    <Button  onClick={handleClick1}>לחישוב כמות האינסולין</Button>
     </div>
   );
 }

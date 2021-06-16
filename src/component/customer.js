@@ -1,6 +1,11 @@
 import React from 'react';
-
+import { useHistory } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
 const Customer = () => {
+  const history = useHistory();
+  const handleClick2 = () =>{
+    history.push("/home")
+  } 
   return (
       
     <div className="App">  
@@ -21,7 +26,7 @@ const Customer = () => {
     <input></input>
     <label>טלפון</label>
     <input></input>
-   
+    <Button  onClick={handleClick2}>לאישור הרשמה</Button>
     </div>
   );
 }

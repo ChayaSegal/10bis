@@ -1,6 +1,11 @@
 import React from 'react';
-
+import { useHistory } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
 const PoductHome = () => {
+  const history = useHistory();
+  const handleClick1 = () =>{
+    history.push("/levelOfSugar")
+  } 
   return (
       
     <div className="App">  
@@ -9,8 +14,7 @@ const PoductHome = () => {
 
     <div> מה מבית?</div>
 
-    <input></input>
-    <button>הוסף לארוחה שלי</button>
+    <Button  onClick={handleClick1}>להכנסת רמת הסוכר</Button>
 
     </div>
   );

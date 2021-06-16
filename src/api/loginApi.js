@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 
 /*export const loginToServer = () => {
     return fetch(`http://localhost:3000/login?user=user1`, { body: { user: 111 } })
@@ -12,4 +12,4 @@ import React from "react";
             console.log("error", err);
         });*/
 
-}
+//}
