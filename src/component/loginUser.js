@@ -1,26 +1,28 @@
-import React from 'react';
+import  React , {useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
+import { login } from "../api/loginApi";
+
 const LoginUser = () => {
   const history = useHistory();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  
   const handleClick1 = () =>{
+   //  login(email, password);
+   console.log(email+password);
     history.push("/home")
   } 
 
 
 
   
-  return (
-    <div className="App">  
-  
-
-    <label>שם משתמש</label>
-    <input></input>
+  return (<div className="App">  
+    <label>מייל</label>
+    <input onChange={(e)=>this.setEmail(e.target.value)}></input>
     <label>סיסמא</label>
-    <input></input>
+    <input onChange={(e)=>this.setPassword(e.target.value)}></input>
     <Button  onClick={handleClick1}>התחברות</Button>
-
-    
     </div>
   );
 }

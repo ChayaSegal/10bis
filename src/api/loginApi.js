@@ -1,6 +1,6 @@
 import React from "react";
 
-export const loginToServer = (userName, password) => {
+export const login = (email, password) => {
     return fetch(`http://localhost:3000/login/${email}/${password}`)
         .then((res) => res.json())
         .then((data) => {
@@ -14,15 +14,11 @@ export const loginToServer = (userName, password) => {
 
 }
 
-export const signup = (userName, firstName, lastName, email, password, phone, adrress) => {
-    console.log(userName, firstName, lastName, email, password, phone, adrress)
-    debugger;
-    return fetch(`http://localhost:3000/users/signup`, {
+export const signup = (email, password, firstName, lastName, phone, address) => {
+    console.log(email, password, firstName, lastName,  phone, address)
+    return fetch(`http://localhost:3000/signup`, {
         method: 'POST', // or 'PUT'
-        headers: {
-            'Content-Type': 'application/json'
-          },
-        body: JSON.stringify({userName, firstName, lastName, email, password, phone, adrress })
+        body: JSON.stringify({email, password, firstName, lastName,  phone, address})
     })
         .then(() => { debugger; console.log("you singup") })
         .catch((err) => {
